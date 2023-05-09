@@ -3,12 +3,9 @@ function checkSpam(str) {
   const SECOND_CHECK_VALUE = "XXX";
 
   str = str.toLowerCase();
-  if (
+
+  return (
     str.includes(FIRST_CHECK_VALUE.toLowerCase()) ||
     str.includes(SECOND_CHECK_VALUE.toLowerCase())
-  ) {
-    return true;
-  }
-
-  return false;
+  );
 }

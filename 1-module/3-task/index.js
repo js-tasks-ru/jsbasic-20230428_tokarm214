@@ -1,7 +1,6 @@
 function ucFirst(str) {
-  if (typeof str === "string") {
-    if (str) return str[0].toUpperCase() + str.slice(1);
-    else return str;
+  if (str && typeof str === "string") {
+    return str[0].toUpperCase() + str.slice(1);
   }
-  return false;
+  return str;
 }
